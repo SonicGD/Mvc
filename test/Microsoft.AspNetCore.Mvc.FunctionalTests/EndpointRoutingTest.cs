@@ -54,7 +54,7 @@ namespace Microsoft.AspNetCore.Mvc.FunctionalTests
             Assert.Equal("PageRoute", result.Controller);
             Assert.Equal("ConventionalRoute", result.Action);
 
-            // pagevalue is not used in "page" route value because
+            // pagevalue is not used in "page" route value because it is a required value
             Assert.Collection(
                 result.RouteValues,
                 kvp => Assert.Equal("action", kvp.Key),
